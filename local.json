@@ -1,0 +1,44 @@
+{
+ "name": "AdRobo",
+ "package": "adrobo",
+ "wheels": [
+  "numpy",
+  "pandas",
+  "scipy",
+  "scikit-learn"
+ ],
+ "load_status": "numpy と pandas と scikit-learn を読み込んでいます",
+ "bench": false,
+ "terminal": [
+  "done",
+  "failed",
+  "cancelled"
+ ],
+ "routes": [
+  {
+   "path": [
+    "jobs",
+    ":id",
+    "series"
+   ],
+   "fn": "series",
+   "args": [
+    ":id",
+    "?series",
+    "#max_points=2000"
+   ]
+  },
+  {
+   "path": [
+    "jobs",
+    ":id",
+    "row"
+   ],
+   "fn": "row",
+   "args": [
+    ":id",
+    "#row"
+   ]
+  }
+ ]
+}
